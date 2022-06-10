@@ -32,6 +32,14 @@ namespace PYKE
 
         private void circuleButton1_Click(object sender, EventArgs e)
         {
+            Form5 f5 = new Form5();
+            this.Hide();
+            f5.ShowDialog();
+            System.Environment.Exit(1);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
             this.Close();
         }
     }
