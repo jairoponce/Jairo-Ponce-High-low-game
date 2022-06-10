@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
 
-
 namespace PYKE
 {
+
     public partial class Form2 : Form
     {
        
@@ -39,6 +39,7 @@ namespace PYKE
         int count = 0;
         string correct = "CORRECT";
         string wrong = "WRONG";
+        
         private void Form2_Load(object sender, EventArgs e)
         {
             Random ran = new Random();
@@ -191,7 +192,8 @@ namespace PYKE
                 {
                     pictureBox19.Visible = false;
                 }
-                MessageBox.Show(correct);
+                Form3 f3 = new Form3();
+                f3.ShowDialog();
                 count++;
                 label6.Text = count.ToString();
                 pictureBox3.Visible = false;
@@ -343,7 +345,8 @@ namespace PYKE
                 {
                     pictureBox19.Visible = false;
                 }
-                MessageBox.Show(wrong);
+                Form4 f4 = new Form4();
+                f4.ShowDialog();
                 pictureBox3.Visible = false;
                 pictureBox13.Visible = false;
                 pictureBox4.Visible = false;
@@ -625,7 +628,8 @@ namespace PYKE
                 {
                     pictureBox19.Visible = false;
                 }
-                MessageBox.Show(correct);
+                Form3 f3 = new Form3();
+                f3.ShowDialog();
                 count++;
 
                 label6.Text = count.ToString();
@@ -778,7 +782,8 @@ namespace PYKE
                 {
                     pictureBox19.Visible = false;
                 }
-                MessageBox.Show(wrong);
+                Form4 f4 = new Form4();
+                f4.ShowDialog();
                 pictureBox3.Visible = false;
                 pictureBox13.Visible = false;
                 pictureBox4.Visible = false;
@@ -932,7 +937,8 @@ namespace PYKE
                 {
                     pictureBox19.Visible = false;
                 }
-                MessageBox.Show(correct);
+                Form3 f3 = new Form3();
+                f3.ShowDialog();
                 count++;
                 label6.Text = count.ToString();
                 pictureBox3.Visible = false;
@@ -1085,8 +1091,8 @@ namespace PYKE
                 {
                     pictureBox19.Visible = false;
                 }
-                MessageBox.Show(wrong);
-
+                Form4 f4 = new Form4();
+                f4.ShowDialog();
                 pictureBox3.Visible = false;
                 pictureBox13.Visible = false;
                 pictureBox4.Visible = false;

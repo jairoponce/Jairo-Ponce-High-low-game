@@ -38,6 +38,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -64,6 +65,7 @@
             // 
             resources.ApplyResources(this.label1, "label1");
             this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Name = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click_1);
@@ -72,9 +74,8 @@
             // 
             resources.ApplyResources(this.label2, "label2");
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.label2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.ForeColor = System.Drawing.Color.Crimson;
             this.label2.Name = "label2";
             // 
             // pictureBox1
@@ -107,6 +108,14 @@
             this.label3.Name = "label3";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
+            // label4
+            // 
+            resources.ApplyResources(this.label4, "label4");
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.label4.ForeColor = System.Drawing.Color.Ivory;
+            this.label4.Name = "label4";
+            // 
             // Form1
             // 
             resources.ApplyResources(this, "$this");
@@ -115,9 +124,10 @@
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.progressBar1);
+            this.Controls.Add(this.label2);
             this.DoubleBuffered = true;
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -139,6 +149,7 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }
 
